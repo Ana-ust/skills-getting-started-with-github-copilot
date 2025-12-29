@@ -17,7 +17,41 @@
         <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
+          <!-- Template for activity cards (used by JS to render each activity) -->
+          <template id="activity-template">
+            <div class="activity-card" data-activity-id="">
+              <h4 class="activity-title">Activity Title</h4>
+              <p class="activity-desc">Short description of the activity.</p>
+
+              <!-- Participants section -->
+              <div class="participants" aria-label="Participants for activity">
+                <h5>Participants</h5>
+                <ul class="participants-list">
+                  <!-- Example list items: JS should populate these -->
+                  <li>
+                    <!-- Optional avatar -->
+                    <!-- <img src="path/to/avatar.jpg" alt="Alice Johnson avatar" /> -->
+                    <span class="participant-name">Alice Johnson</span>
+                  </li>
+                  <li><span class="participant-name">Marcus Lee</span></li>
+                </ul>
+              </div>
+            </div>
+          </template>
+
+          <!-- Example card shown while real data loads -->
+          <div class="activity-card">
+            <h4 class="activity-title">Chess Club</h4>
+            <p class="activity-desc">Weekly strategy and tournaments.</p>
+            <div class="participants" aria-label="Participants for Chess Club">
+              <h5>Participants</h5>
+              <ul class="participants-list">
+                <li><span class="participant-name">Olivia Park</span></li>
+                <li><span class="participant-name">Ethan Rivera</span></li>
+                <li><span class="participant-name">Samira Khan</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
